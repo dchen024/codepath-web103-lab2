@@ -7,8 +7,9 @@
     "strict": true,
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "allowImportingTsExtensions": true
   },
-  "include": ["./**/*.ts"],
+  "include": ["./**/*.ts", "routes/gifts.js"],
   "exclude": ["node_modules"]
 }

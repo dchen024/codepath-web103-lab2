@@ -1,4 +1,5 @@
 import express from 'express';
+import giftsRouter from './routes/gifts.ts';
 
 const app = express();
 
@@ -13,6 +14,8 @@ app.get('/', (req, res) => {
       '<h1 style="text-align: center; margin-top: 50px;">UnEarthed API</h1>'
     );
 });
+
+app.use('/gifts', giftsRouter);
 
 app.listen(PORT, () => {
   console.log(`🚀 Server listening on http://localhost:${PORT}`);
