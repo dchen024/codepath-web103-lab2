@@ -58,4 +58,10 @@ const renderGifts = async (): Promise<void> => {
   }
 };
 
-renderGifts();
+const requestedURL = window.location.pathname.split('/').pop();
+
+if (requestedURL) {
+  window.location.href = '../404.html';
+} else {
+  renderGifts();
+}
