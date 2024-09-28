@@ -32,7 +32,7 @@ if (header) {
   headerButton.textContent = 'Home';
 
   // Add a click event listener to the button
-  headerButton.addEventListener('click', function handleClick(event) {
+  headerButton.addEventListener('click', function handleClick() {
     window.location.href = '/';
   });
 

@@ -6,7 +6,7 @@ interface Gift {
   image: string;
 }
 
-const renderGifts = async (): Promise<void> => {
+const fetchAndRenderGifts = async (): Promise<void> => {
   try {
     const response = await fetch('/gifts');
     if (!response.ok) {
@@ -64,4 +64,4 @@ const renderGifts = async (): Promise<void> => {
   }
 };
 
-renderGifts();
+fetchAndRenderGifts();
