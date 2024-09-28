@@ -1,12 +1,6 @@
-interface Gift {
-  id: string;
-  name: string;
-  pricePoint: string;
-  audience: string;
-  image: string;
-}
+import { Gift } from '../types';
 
-const fetchAndRenderGifts = async (): Promise<void> => {
+const renderGifts = async (): Promise<void> => {
   try {
     const response = await fetch('/gifts');
     if (!response.ok) {
@@ -64,4 +58,4 @@ const fetchAndRenderGifts = async (): Promise<void> => {
   }
 };
 
-fetchAndRenderGifts();
+renderGifts();
