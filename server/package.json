@@ -4,7 +4,8 @@
   "main": "server.ts",
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm server.ts"
+    "start": "node --loader ts-node/esm server.ts",
+    "reset": "cd config && node --loader ts-node/esm reset.ts"
   },
   "keywords": [],
   "author": "",

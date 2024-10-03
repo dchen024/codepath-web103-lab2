@@ -1,4 +1,7 @@
+import dotenv from 'dotenv';
 import pg from 'pg';
+
+dotenv.config({ path: '../.env.local' });
 
 const config = {
   user: process.env.PGUSER,
