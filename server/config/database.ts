@@ -1,7 +1,4 @@
-import dotenv from 'dotenv';
 import pg from 'pg';
-
-dotenv.config({ path: './.env.local' });
 
 const config = {
   user: process.env.PGUSER,
@@ -10,5 +7,8 @@ const config = {
   port: process.env.PGPORT ? parseInt(process.env.PGPORT, 10) : undefined,
   database: process.env.PGDATABASE,
 };
+
+console.log(config.host);
+console.log(process.env.PGHOST);
 
 export const pool = new pg.Pool(config);

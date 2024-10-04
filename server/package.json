@@ -4,8 +4,9 @@
   "main": "server.ts",
   "type": "module",
   "scripts": {
-    "start": "node --loader ts-node/esm server.ts",
-    "reset": "cd config && node --loader ts-node/esm reset.ts"
+    "start": "tsx --env-file=.env.local server.ts",
+    "dev": "tsx watch server.ts",
+    "reset": "cd config && tsx --env-file=.env.local reset.ts"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "express": "^4.21.0",
     "nodemon": "^3.1.6",
     "pg": "^8.13.0",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.1"
   }
 }
