@@ -1,15 +1,13 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
+    "module": "NodeNext",
     "target": "ES6",
     "esModuleInterop": true,
     "skipLibCheck": true,
     "strict": true,
-    "moduleResolution": "node",
+    "moduleResolution": "NodeNext",
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "allowImportingTsExtensions": true,
-    "noEmit": true
+    "outDir": "./dist"
   },
   "include": ["./**/*.ts", "routes/gifts.js"],
   "exclude": ["node_modules"]

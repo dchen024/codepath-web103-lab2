@@ -4,9 +4,10 @@
   "main": "server.ts",
   "type": "module",
   "scripts": {
-    "start": "tsx --env-file=.env.local server.ts",
+    "start": "node dist/server.js",
     "dev": "tsx watch server.ts",
-    "reset": "cd config && tsx --env-file=.env.local reset.ts"
+    "reset": "cd config && tsx reset.ts",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,7 @@
   },
   "dependencies": {
     "dotenv": "^16.4.5",
+    "esbuild": "^0.24.0",
     "express": "^4.21.0",
     "nodemon": "^3.1.6",
     "pg": "^8.13.0",

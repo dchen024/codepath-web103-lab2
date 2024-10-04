@@ -16,14 +16,31 @@ http://localhost:5173/
 ```bash
 cd server
 npm i
-npm start
+npm dev
 http://localhost:3001
 ```
 
 ### Build
 
+Front End
+
 ```bash
 cd client
 npm i
 npm run build
+server/public
 ```
+
+Back End
+
+```bash
+cd server
+npm i
+npm run build
+npm run start
+server/dist/server.js
+```
+
+## Notes
+
+- switch build from tsc to esbuild
