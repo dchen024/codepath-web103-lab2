@@ -1,3 +1,4 @@
+import './dotenv.js';
 import { pool } from './database.js';
 import giftData from '../data/gifts_data.js';
 

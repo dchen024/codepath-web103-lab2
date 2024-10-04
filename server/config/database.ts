@@ -8,7 +8,7 @@ const config = {
   database: process.env.PGDATABASE,
 };
 
-console.log(config.host);
-console.log(process.env.PGHOST);
+// console.log(config.host);
+// console.log(process.env.PGHOST);
 
 export const pool = new pg.Pool(config);

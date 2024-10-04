@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node dist/server.js",
     "dev": "tsx watch server.ts",
-    "reset": "cd config && tsx reset.ts",
+    "reset": "tsx ./config/reset.ts",
     "build": "tsc"
   },
   "keywords": [],
